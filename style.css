@@ -1,30 +1,111 @@
-html {
-    font-family: 'Be Vietnam Pro', sans-serif;
-    scroll-behavior: smooth;
-}
-
+/* Estilos Generales */
 body {
-    margin: 0;
-    padding: 0;
-    background-color: white;
-}
-.Contener {
-    /* Padding-inline */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-inline: 42px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f1eb;
 }
 
-nav {
-    display: flex;
-    align-items: center; 
-    gap: 18px; 
+header {
+  background-color: #ffb6c1;
+  padding: 15px 20px;
+  text-align: center;
 }
 
-.--button {
-    display: flex;
-    padding-inline: 16px;
-    padding-block: 8px;
-    border: 1px solid #e4e4e4ee;
+header .logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+
+header nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+header nav a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 20px;
+  background-color: #f6f6f6;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #777;
+  margin-top: 10px;
+}
+
+.buttons .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.primary-btn {
+  background-color: #ffb6c1;
+  color: #fff;
+}
+
+.secondary-btn {
+  background-color: #fff;
+  color: #ffb6c1;
+  border: 2px solid #ffb6c1;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+  background-color: #ff99a6;
+}
+
+.menu-category {
+  margin: 30px 0;
+}
+
+.category-title {
+  font-size: 24px;
+  color: #ffb6c1;
+  margin-bottom: 15px;
+}
+
+.menu-item {
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.menu-item h4 {
+  font-size: 22px;
+  color: #333;
+}
+
+.menu-item p {
+  font-size: 16px;
+  color: #777;
+}
+
+footer {
+  background-color: #ffb6c1;
+  text-align: center;
+  padding: 15px;
+  font-size: 16px;
+  color: #fff;
 }

@@ -1,26 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página</title>
+    <title>Chingu Place</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head> 
-,<body>
-   <header>
-    <div class="Contener">
-         <h1>ACME</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Home</a>
-            <a href="#">Home</a>
-            <a href="#">Home</a>
-            <a href="#" class="--button">Login</a>
-        </nav>
-    </div>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <div class="logo">Chingu Place</div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="menu.html" target="_blank">Menú</a>
+      <a href="#sobre-nosotros">Sobre Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
   </header>
+
+  <!-- Sección Principal (Bienvenida) -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Bienvenido a Chingu Place</h1>
+      <p>Disfruta de un espacio único lleno de sabores, cultura y momentos agradables. ¡Te esperamos con los brazos abiertos! 🍵🍰</p>
+      <div class="buttons">
+        <a href="menu.html" target="_blank" class="btn primary-btn">Ver Menú</a>
+        <a href="#sobre-nosotros" class="btn secondary-btn">Conócenos</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/cafeteria.png" alt="Interior de la cafetería">
+    </div>
+  </section>
+
+  <!-- Sección Sobre Nosotros -->
+  <section id="sobre-nosotros" class="about">
+    <h2>Sobre Chingu Place</h2>
+    <p>En Chingu Place, creamos un ambiente único inspirado en la cultura asiática. Ofrecemos lo mejor en postres, bebidas y más. Ven y vive una experiencia increíble. 💖</p>
+  </section>
+
+  <!-- Sección Promociones -->
+  <section id="promociones" class="promotions">
+    <h2>Promociones del Mes</h2>
+    <div class="promo-list">
+      <div class="promo-item">
+        <h3>¡50% en bebidas frías!</h3>
+        <p>Solo durante el mes de marzo, aprovecha nuestras increíbles promociones.</p>
+      </div>
+      <div class="promo-item">
+        <h3>Postre Gratis con tu pedido</h3>
+        <p>Elige uno de nuestros postres y recibe otro gratis al pedir tu bebida favorita.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Contacto -->
+  <section id="contacto" class="contact">
+    <h2>Contacto</h2>
+    <p>📍 Ubicación: Calle 123, República Dominicana</p>
+    <p>📞 Teléfono: +1 809 123 4567</p>
+    <p>✉️ Email: contacto@chinguplace.com</p>
+    <form action="#" method="POST" class="contact-form">
+      <input type="text" name="nombre" placeholder="Tu Nombre" required>
+      <input type="email" name="email" placeholder="Tu Email" required>
+      <textarea name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+      <button type="submit" class="btn primary-btn">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Pie de Página -->
+  <footer>
+    <p>© 2025 Chingu Place - Todos los derechos reservados.</p>
+  </footer>
+
 </body>
 </html>
